@@ -1,8 +1,10 @@
 import pandas as pd
 
-file = "data/olist/olist_order_items_dataset.csv"
+#file = "data/olist/olist_order_items_dataset.csv"
+file = "data/out/main_seller.csv"
+#out = open('data/out/data.txt', 'w')
+out = open('data/out/seller_data.txt', 'w')
 data = pd.read_csv(file, usecols=['order_id','product_id'])
-out = open('data/out/data.txt', 'w')
 #print(type(data))
 #print(data.head(10))
 #print(data.count())
